@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - CJMV</title>
+
+    <!-- Tailwind CSS -->
+    <link href="output.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" />
+
+    <!-- tsParticles -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js" defer></script>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        #tsparticles {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+        }
+
+        #tsparticles canvas {
+            display: block;
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+
+
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1.2s ease-out forwards;
+        }
+    </style>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+
+</head>
+
+<body class="scroll-smooth bg-blue-950 text-white font-sans min-h-screen flex flex-col pt-20">
+    <!-- Background -->
+    <div id="tsparticles"></div>
+
+    <!-- Header -->
+    <header
+        class="fixed whitespace-nowrap top-0 left-0 mt-2 mx-100 px-7 py-3 border space-x-10 flex justify-between items-center rounded-2xl bg-blue-950 text-white z-50">
+
+        <!-- Left nav -->
+        <nav class="flex space-x-10 text-[13px]">
+            <a href="#home" class="hover:underline ">Home</a>
+            <a href="#about" class="hover:underline">About</a>
+            <a href="#skills" class="hover:underline">Skills</a>
+            <a href="#projects" class="hover:underline">Projects</a>
+            <a href="#contact" class="hover:underline">Contact</a>
+            <p>|</p>
+        </nav>
+
+        <!-- Right button -->
+        <a href="#about"
+            class="flex items-center justify-center px-4 py-1 text-[13px] font-semibold bg-white text-black rounded-2xl hover:bg-gray-200 cursor-pointer">
+            Get Started
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <main id="home" class="min-h-screen flex flex-col items-center justify-center text-center px-4 z-10 ">
+        <h1 class="text-4xl md:text-4xl font-bold text-black mb-4">Christian Jay Valdez</h1>
+        <p class="text-xl md:text-2xl text-black">
+            Aspiring Front-End Developer & UI/UX Designer from the Philippines
+        </p>
+        <p class="text-base text-black mt-2 max-w-lg">
+            Passionate about building clean, responsive, and user-friendly
+            interfaces.
+        </p>
+
+        <a href="https://drive.google.com/file/d/1jAux2MetRiGhpBHoqGbnQAzh7iPMiRE0/view?usp=sharing"
+            class="mt-8 px-6 py-2 text-sm border border-black  text-black rounded transition duration-200 hover:bg-blue-950 hover:text-white">
+            Download CV
+        </a>
+
+
+
+
+
+    </main>
+
+
+
+
+
+    <div class="text-center text-white px-6 bg-blue-950 py-5  ">
+        <div class="inline-block text-left">
+            I’m always eager to explore how things work and adapt to new challenges. For me, design isn’t just about
+            visuals—it’s how ideas speak without words.
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <section id="about" class="bg-white py-10  min-h-screen  justify-center flex items-center  ">
+
+
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center ">
+
+            <!-- Your Image -->
+            <div>
+                <img src="Grad pic.jpeg"
+                    alt="CJ Valdez" class="   rounded-md shadow-md w-100 object-cover ">
+            </div>
+
+            <!-- Intro Text -->
+            <div class="space-y-4 scroll-fade opacity-0 translate-y-10 transition-all duration-900">
+                <h2 class="text-3xl font-bold  text-black">Hi, I'm Christian Jay Valdez</h2>
+                <p class="text-black">UI/UX Designer & Front-End Developer</p>
+                <p class="text-black">
+                    I specialize in building clean, fast, and responsive websites that prioritize user experience and
+                    accessibility. With a creative eye and technical know-how, I bring designs to life through code.
+                </p>
+                <p class="text-black">
+                    I graduated with a degree in Computer Technology — proudly a Dean’s Lister and recipient of the Best
+                    in Thesis award. These achievements reflect my passion for learning, problem-solving, and pushing
+                    myself to deliver meaningful results.
+                </p>
+
+                <br>
+
+                <a href="#"
+                    class="mt-8 px-6 py-2  text-sm border border-black bg-blue-950 text-white hover:underline rounded transition duration-200 ">
+                    Read More
+                </a>
+
+            </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section id="skills" class="bg-black min-h-screen text-white px-4 py-20">
+        <div class="max-w-6xl mx-auto space-y-10">
+
+
+            <h1 class=" mb-12 py-1  mx-130   font-bold justify-center tracking-wider items-center flex text-1xl"> MY
+                SKILLS</h1>
+
+            <!-- 🎨 TOOLS -->
+            <div
+                class="flex flex-col border  md:flex-row items-start gap-6 group space-x-100  hover:bg-gray-900 p-6 rounded-lg transition duration-300">
+
+                <div class="flex items-center gap-2 text-5xl font-bold text-white ml-15 mt-5 md:w-40">
+                    <span class="text-sm text-gray-400">01</span>
+                    <h3>TOOLS</h3>
+                </div>
+                <div
+                    class="flex flex-wrap mt-5 justify-start gap-2 space-y-4 scroll-fade opacity-0 translate-y-10 transition-all duration-900">
+                    <!-- Figma -->
+                    <div class="flex flex-col items-center p-2 transition transform hover:-translate-y-2 duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                            class="w-12 h-12 bg-white/10 rounded-lg  shadow-md hover:shadow-xl transition  duration-300" />
+                    </div>
+                    <!-- Canva -->
+                    <div class="flex flex-col items-center p-2 transition transform hover:-translate-y-2 duration-300">
+                        <div
+                            class="w-15 h-12 bg-indigo-500 text-white rounded-lg transition duration-300 shadow-md hover:shadow-xl flex items-center justify-center font-bold text-sm">
+                            Canva</div>
+                    </div>
+                    <!-- Google Sites -->
+                    <div class="flex flex-col items-center p-2 transition transform hover:-translate-y-2 duration-300">
+                        <div
+                            class="w-15 h-12 bg-blue-600 text-white rounded-lg shadow-md hover:shadow-xl  transition duration-300 flex items-center justify-center font-bold text-sm">
+                            G-sites</div>
+                    </div>
+                    
+
+                    <div class="flex flex-col items-center p-2 transition transform hover:-translate-y-2 duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg"
+            class="w-12 h-12  rounded-lg shadow-md hover:shadow-xl transition duration-300" />
+        </div>
+
+
+
+                </div>
+            </div>
+
+            <!-- 💻 TECH STACK -->
+            <div
+                class=" border flex flex-col md:flex-row items-start gap-6 group space-x-100  hover:bg-gray-900  p-6 rounded-lg transition duration-300">
+                <div class="flex items-center gap-2 text-5xl font-bold text-white ml-15 mt-5 md:w-40">
+                    <span class="text-sm text-gray-400 whitespace-nowrap">02</span>
+                    <h3 class="whitespace-nowrap">TECH STACK</h3>
+                </div>
+
+                <div
+                    class="flex flex-wrap mt-5 justify-start gap-2 space-y-4 scroll-fade opacity-0 translate-y-10 transition-all duration-900 ">
+                    <!-- HTML -->
+                    <div class="flex flex-col items-center p-2 transition transform hover:-translate-y-2 duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            class="w-12 h-12 bg-white/10 rounded-lg shadow-md brightness-100 hover:shadow-xl transition duration-300" />
+                    </div>
+                    <!-- CSS -->
+                    <div class="flex flex-col items-center p-2 transition transform hover:-translate-y-2 duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                            class="w-12 h-12 bg-white/10 rounded-lg shadow-md hover:shadow-xl brightness-100 transition duration-300" />
+                    </div>
+                    <!-- JavaScript -->
+                    <div class="flex flex-col items-center p-2 transition transform hover:-translate-y-2 duration-300">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            class="w-12 h-12 bg-white/10 rounded-lg shadow-md  brightness-100 hover:shadow-xl transition duration-300" />
+                    </div>
+                    <!-- Tailwind -->
+                    <div class="flex flex-col items-center p-2 transition transform hover:-translate-y-2 duration-300">
+                        <img src="https://tailwindcss.com/favicons/apple-touch-icon.png"
+                            class="w-12 h-12 bg-white/10 rounded-lg shadow-md hover:shadow-xl brightness-100  transition duration-300" />
+                    </div>
+
+                     <!-- React -->
+        <div class="flex flex-col items-center p-2 transition transform hover:-translate-y-2 duration-300">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+            class="w-12 h-12 bg-white/10 rounded-lg shadow-md hover:shadow-xl transition duration-300" />
+        </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- All scripts -->
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const header = document.getElementById("site-header");
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 10) {
+                    header.classList.remove("bg-transparent");
+                    header.classList.add("bg-blue-900", "shadow-lg");
+                } else {
+                    header.classList.remove("bg-blue-900", "shadow-lg");
+                    header.classList.add("bg-transparent");
+                }
+            });
+
+            // tsParticles background
+            tsParticles.load("tsparticles", {
+                fullScreen: { enable: false },
+                background: { color: { value: "FFFFFF" } },
+                particles: {
+                    number: { value: 80, density: { enable: true, area: 800 } },
+                    color: { value: "#000000" },
+                    shape: { type: "circle" },
+                    opacity: { value: 0.3 },
+                    size: { value: 2 },
+                    move: { enable: true, speed: 1 },
+                    links: {
+                        enable: true,
+                        distance: 130,
+                        color: "#000000",
+                        opacity: 0.2,
+                        width: 1,
+                    },
+                },
+                interactivity: {
+                    events: {
+                        onHover: { enable: true, mode: "repulse" },
+                        onClick: { enable: true, mode: "push" },
+                    },
+                    modes: {
+                        repulse: { distance: 100 },
+                        push: { quantity: 4 },
+                    },
+                },
+            });
+        });
+    </script>
+
+
+
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const el = entry.target;
+
+                if (entry.isIntersecting) {
+                    el.classList.remove('opacity-0', 'translate-y-10');
+                    el.classList.add('opacity-100', 'translate-y-0');
+                } else {
+                    el.classList.remove('opacity-100', 'translate-y-0');
+                    el.classList.add('opacity-0', 'translate-y-10');
+                }
+            });
+        }, { threshold: 0.3 });
+
+        document.querySelectorAll('.scroll-fade').forEach(el => observer.observe(el));
+    </script>
+
+
+
+
+
+ <section class="h-500 w-full bg-white text-gray-900 px-6 py-15">
+        <div class="max-w-5xl mx-auto">
+
+            <!-- Section Title -->
+            <h2 class="text-2xl font-bold text-center mb-16">What I Offer</h2>
+
+            <!-- Offer Items Container -->
+            <div class="space-y-12">
+
+                <!-- Item 01 -->
+                <div class="flex flex-col items-start border-l-4 border-blue-500 pl-6">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="text-sm text-gray-600">01</span>
+                        <h3 class="text-2xl font-semibold">Web Design</h3>
+                    </div>
+                    <p class="text-sm text-gray-600">
+                        Designing modern, user-focused websites using <strong>Figma</strong> for layout, prototyping,
+                        and reusable components. My process focuses on clean hierarchy, accessible typography, and
+                        mobile-first design principles. I collaborate closely with clients or teams to turn ideas into
+                        highly intuitive visual interfaces that elevate user experience.
+                    </p>
+                </div>
+
+                <!-- Item 02 -->
+                <div class="flex flex-col items-start border-l-4 border-blue-500 pl-6">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="text-sm text-gray-600">02</span>
+                        <h3 class="text-2xl font-semibold">Webflow Deployment</h3>
+                    </div>
+                    <p class="text-sm text-gray-600">
+                        Building and launching responsive websites using <strong>Webflow</strong> with smooth
+                        animations, interactions, and CMS capabilities. I ensure pixel-perfect implementation of designs
+                        and leverage Webflow's visual development platform to quickly build scalable sites without
+                        sacrificing flexibility, speed, or performance. Ideal for startups and creatives who want
+                        control without code.
+                    </p>
+                </div>
+
+                <!-- Item 03 -->
+                <div class="flex flex-col items-start border-l-4 border-blue-500 pl-6">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="text-sm text-gray-600">03</span>
+                        <h3 class="text-2xl font-semibold">Front-End Development</h3>
+                    </div>
+                    <p class="text-sm text-gray-600">
+                        Transforming designs into fully functional websites using <strong>HTML, Tailwind CSS, and
+                            JavaScript</strong> for responsive, interactive UI. I build clean and scalable front-end
+                        codebases that follow best practices, are optimized for performance, and are easily
+                        maintainable. From landing pages to complex layouts, I bring interfaces to life with custom
+                        logic, animations, and API integration.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    
+<section id="projects" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <!-- Section Title -->
+    <div class="bg-blue-950 mb-12 py-3 rounded-lg shadow-sm">
+      <h2 class="text-3xl font-semibold text-white tracking-wide">Projects</h2>
+    </div>
+
+    <!-- Project Cards Container -->
+    <div class="grid md:grid-cols-3 gap-12 justify-center">
+
+      <!-- Project 1 -->
+      <div class="bg-white border border-gray-200 rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-500">
+        <img 
+          src="Figma.png" 
+          alt="GuardianLink Project"
+          class="w-full h-56 object-cover transform hover:scale-105 transition duration-700"
+        >
+        <div class="p-6 text-left flex flex-col justify-between min-h-[160px]">
+          <h3 class="text-base font-semibold text-gray-900 mb-4">
+            GuardianLink: Ensuring Student Safety through QR-Based Entry Notifications
+          </h3>
+
+ <div class="flex items-center mb-5 justify-center w-15 h-10 py-1  bg-blue-950 ">
+  <h3 class="text-white  text-sm font-medium">Figma</h3>
+</div>
+
+          <a 
+            href="https://www.figma.com/proto/YLv4KMEOdjHN5izrDvw6FV/Monitoring-System?node-id=17-29&t=wS7Koh140ms5fNch-1&scaling=contain&content-scaling=fixed&page-id=0%3A1" 
+            target="_blank" 
+            class="bg-blue-950 text-white text-xs font-medium px-5 py-2 rounded-full hover:bg-blue-900 transition duration-300 self-start"
+          >
+            🔗 <span class="hover:underline">Live Demo</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white border border-gray-200 rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition duration-500">
+        <img 
+          src="Tesda.jpeg" 
+          alt="Regional Training Center Central Luzon Website"
+          class="w-full h-56 object-cover transform hover:scale-105 transition duration-700"
+        >
+        <div class="p-6 text-left flex flex-col justify-between min-h-[160px]">
+          <h3 class="text-base font-semibold text-gray-900 mb-4">
+            Regional Training Center Central Luzon Website
+          </h3>
+
+           <div class="flex items-center mb-5 justify-center w-20 h-10 py-1  bg-blue-950 ">
+  <h3 class="text-white whitespace-nowrap  text-sm font-medium">Google Site</h3>
+</div>
+
+          <a 
+            href="https://www.tesdartcclguiguinto.com/" 
+            target="_blank" 
+            class="bg-blue-950 text-white text-xs font-medium px-5 py-2 rounded-full hover:bg-blue-900 transition duration-300 self-start"
+          >
+            🔗  <span class="hover:underline">View Site</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 3 (Your Portfolio) -->
+      <div class="bg-white border border-gray-200 rounded-3xl overflow-hidden shadow-md hover:shadow-xl  transition duration-500">
+        <img 
+          src="Portfolio SS.jpeg" 
+          alt="My Portfolio Website"
+          class="w-full h-56 object-cover transform hover:scale-105 transition duration-700"
+        >
+        <div class="p-6 text-left flex flex-col justify-between min-h-[160px]">
+          <h3 class="text-base font-semibold text-gray-900 mb-4">
+            My Personal Portfolio 
+          </h3>
+
+                <div class="flex items-center mb-5 justify-center w-20 h-10 py-1  bg-blue-950 ">
+  <h3 class="text-white whitespace-nowrap  text-sm font-medium">Html</h3>
+</div>
+      <div class="flex items-center mb-5 justify-center w-20 h-10 py-1  bg-blue-950 ">
+  <h3 class="text-white whitespace-nowrap  text-sm font-medium">Css</h3>
+</div>
+
+      <div class="flex  items-center mb-5 justify-center w-20 h-10 py-1  bg-blue-950 ">
+  <h3 class="text-white whitespace-nowrap  text-sm font-medium">JavaScript</h3>
+</div>
+
+
+
+          <a 
+            href="https://cjv-dev.github.io/Portfolio/" 
+            target="_blank" 
+            class="bg-blue-950 text-white text-xs font-medium px-5 py-2 rounded-full hover:bg-blue-900 transition duration-300 self-start"
+          >
+            🔗 <span class="hover:underline">Visit Site </span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+   
+
+
+
+
+    <footer id="contact" class="bg-blue-950 text-black  px-6 py-16">
+        <div class="max-w-6xl mx-auto text-center space-y-6">
+
+            <!-- Let's Work Together -->
+            <h2 class="text-3xl md:text-4xl text-white font-bold">Let’s Work Together</h2>
+            <p class="text-sm text-white ">
+                I'm currently looking for opportunities to apply my skills in web development. Whether it's an
+                internship, freelance project, or full-time role — feel free to reach out.
+            </p>
+
+            <!-- Contact Button -->
+            <a href="mailto:youremail@example.com"
+                class="inline-block mt-4 px-5  py-2 bg-white text-black rounded-xl font-semibold shadow-md ">
+                Message Me
+            </a>
+
+
+            <div class="flex justify-center space-x-6 ">
+
+
+
+                <!-- TikTok -->
+                <a href="https://www.tiktok.com/@sidoy.el.chapo?_r=1&_d=secCgYIASAHKAESPgo8qTDjatTHe2K%2FqA48%2Fj5qrvy0K6f2J1ZuOGjkei3c8z1WgiJcfQEyonbTqSoEMeeHMWwPJXx4mQkui5NPGgA%3D&_svg=1&checksum=8e79e7d4a844291547744409e97e874cad43a9bc50d9dd2d3a9d1ff3c9c3a536&sec_uid=MS4wLjABAAAA9-1YHE1ezENub0bGaIvaV1Q1ecRa6gsYmSzNaYZuzRaSaSAFoyroFKCioeRE-Jlz&sec_user_id=MS4wLjABAAAA9-1YHE1ezENub0bGaIvaV1Q1ecRa6gsYmSzNaYZuzRaSaSAFoyroFKCioeRE-Jlz&share_app_id=1180&share_author_id=6871903006108812290&share_link_id=147D1115-0123-43B0-86BD-5BFB4B05891A&share_scene=1&sharer_language=en&social_share_type=5&source=h5_t&timestamp=1751644786&tt_from=copy&u_code=ded5hg7kh9500a&ug_btm=b0%2Cb0&user_id=6871903006108812290&utm_campaign=client_share&utm_medium=ios&utm_source=copy"
+                    class="hover:opacity-75">
+                    <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24">
+                        <path
+                            d="M12.67 2h2.3a4.71 4.71 0 0 0 4.7 4.69v2.3a7 7 0 0 1-4.7-1.63v7.9A6.33 6.33 0 1 1 8 9.2v2.34a3.98 3.98 0 1 0 4.67 3.9V2Z" />
+                    </svg>
+                </a>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/share/1EJjE3bLuA/" class="hover:opacity-75">
+                    <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24">
+                        <path
+                            d="M22 12a10 10 0 1 0-11.5 9.87v-7H8v-2.9h2.5v-2.2c0-2.5 1.5-3.9 3.8-3.9a15.4 15.4 0 0 1 2.2.2v2.4h-1.3c-1.3 0-1.7.8-1.7 1.6v1.9h3l-.5 2.9h-2.5v7A10 10 0 0 0 22 12" />
+                    </svg>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/doysiiiii?igsh=OGh1c3l1dXl6ZG5t" class="hover:opacity-75">
+                    <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24">
+                        <path
+                            d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2c1.7 0 3 1.3 3 3a3 3 0 1 1-6 0c0-1.7 1.3-3 3-3zm4.5-1.9a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                    </svg>
+                </a>
+
+            </div>
+
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
